@@ -11,6 +11,8 @@
 		2F4A29A12A4DC5C6009C10F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A29A02A4DC5C6009C10F5 /* ContentView.swift */; };
 		2F4A29A32A4DC5C8009C10F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A29A22A4DC5C8009C10F5 /* Assets.xcassets */; };
 		2F4A29A62A4DC5C8009C10F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A29A52A4DC5C8009C10F5 /* Preview Assets.xcassets */; };
+		2F4A29AD2A4DC5FF009C10F5 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A29AC2A4DC5FF009C10F5 /* ElementView.swift */; };
+		2F4A29B52A4DD013009C10F5 /* FruitsEtLegumesData in Frameworks */ = {isa = PBXBuildFile; productRef = 2F4A29B42A4DD013009C10F5 /* FruitsEtLegumesData */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2F4A29A02A4DC5C6009C10F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F4A29A22A4DC5C8009C10F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4A29A52A4DC5C8009C10F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F4A29AC2A4DC5FF009C10F5 /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
+		2F4A29B22A4DC9CC009C10F5 /* FruitsEtLegumesData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FruitsEtLegumesData; path = FruitsEtLegumes/FruitsEtLegumesData; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4A29B52A4DD013009C10F5 /* FruitsEtLegumesData in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +40,10 @@
 		2F4A29922A4DC5C6009C10F5 = {
 			isa = PBXGroup;
 			children = (
+				2F4A29B22A4DC9CC009C10F5 /* FruitsEtLegumesData */,
 				2F4A299D2A4DC5C6009C10F5 /* FruitsEtLegumes */,
 				2F4A299C2A4DC5C6009C10F5 /* Products */,
+				2F4A29B32A4DD013009C10F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +60,7 @@
 			children = (
 				2F4A299E2A4DC5C6009C10F5 /* FruitsEtLegumesApp.swift */,
 				2F4A29A02A4DC5C6009C10F5 /* ContentView.swift */,
+				2F4A29AC2A4DC5FF009C10F5 /* ElementView.swift */,
 				2F4A29A22A4DC5C8009C10F5 /* Assets.xcassets */,
 				2F4A29A42A4DC5C8009C10F5 /* Preview Content */,
 			);
@@ -65,6 +73,13 @@
 				2F4A29A52A4DC5C8009C10F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F4A29B32A4DD013009C10F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +98,9 @@
 			dependencies = (
 			);
 			name = FruitsEtLegumes;
+			packageProductDependencies = (
+				2F4A29B42A4DD013009C10F5 /* FruitsEtLegumesData */,
+			);
 			productName = FruitsEtLegumes;
 			productReference = 2F4A299B2A4DC5C6009C10F5 /* FruitsEtLegumes.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4A29A12A4DC5C6009C10F5 /* ContentView.swift in Sources */,
+				2F4A29AD2A4DC5FF009C10F5 /* ElementView.swift in Sources */,
 				2F4A299F2A4DC5C6009C10F5 /* FruitsEtLegumesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +363,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F4A29B42A4DD013009C10F5 /* FruitsEtLegumesData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FruitsEtLegumesData;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F4A29932A4DC5C6009C10F5 /* Project object */;
 }

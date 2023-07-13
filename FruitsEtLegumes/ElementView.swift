@@ -6,13 +6,22 @@
 //
 
 import SwiftUI
+import FruitsEtLegumesData
 
 struct ElementView: View {
+    @State var element: Element
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(element.name)
+                .bold()
+            Spacer()
+            Text(element.emoji)
+        }
+        .padding(.leading)
+        .padding(.trailing)
     }
 }
 
 #Preview {
-    ElementView()
+    ElementView(element: Element(name: "Pomme", type: .Fruit, months: [.April, .May], emoji: "🍏", local: true))
 }
